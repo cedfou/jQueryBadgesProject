@@ -5,7 +5,7 @@ $(function() {
     url: 'https://www.codeschool.com/users/cedfou.json',
     dataType: 'jsonp',
     success: function(response) {
-console.log(response.courses.completed);
+    //console.log(response.courses.completed);
     var badgesElements = $.map(response.courses.completed, function(badge, i) {
        var listItem = $('<div class="course"></div>');
        $('<h3>'+badge.title+'</h3>').appendTo(listItem);
